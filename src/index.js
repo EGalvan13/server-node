@@ -1,11 +1,14 @@
-import { Express, request } from "express";
+import express from 'express'
 
-const app = Express()
+const app = express()
 
 const port = 3000
 
-app.get('/',(request,require) = {
-    respone.send({mes: 'Hello There'})
+app.get('/', (req, res) => {
+  console.log(req)
+  res.send({ msg: 'Hello There' })
 })
 
-app.listen(port)
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`)
+})
