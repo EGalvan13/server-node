@@ -6,7 +6,7 @@ const port = 3000
 
 app.get('/', (req, res) => {
   console.log(req)
-  res.send({ msg: 'Hello There' })
+  res.send({ msg: 'Esau Galvan' })
 })
 
 app.listen(port, () => {
